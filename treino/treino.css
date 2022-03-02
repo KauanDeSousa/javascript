@@ -1,0 +1,10 @@
+
+
+.qdo {
+    background: #000000;
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+}
