@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .cadastro {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: none;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 200px;
+            padding: 5px 15px;
+            margin-left: 100px;
+        }
+
+        #res {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main class="cadastro">
+        <input id="nome" type="text" placeholder="Insira o nome aqui">
+        <input id="email" type="email" placeholder="Insira o email aqui">
+        <input id="celular" type="number" placeholder="Insira seu número de celular">
+        <input id="cpf" type="number" placeholder="Insira o CPF">
+        <button type="submit" onclick="clicar()" id="botao">Enviar Cadastro</button>
+
+        <div id="res"></div>
+
+        <div id="res1"></div>
+
+        <div id="res2"></div>
+
+        <div id="res3"></div>
+    </main>
+
+    <script>
+        var n1 = document.getElementById('nome')
+        var n2 = document.getElementById('email')
+        var n3 = document.getElementById('celular')
+        var n4 = document.getElementById('cpf')
+        var res = document.getElementById('res')
+        var res1 = document.getElementById('res1')
+        var res2 = document.getElementById('res2')
+        var res3 = document.getElementById('res3')
+
+        function clicar() {
+            res.innerHTML = `Seu nome é: ${n1.value}`
+            res1.innerHTML = `Seu email é: ${n2.value}`
+            res2.innerHTML = `Seu celular é: ${n3.value}`
+            res3.innerHTML = `Seu CPF é: ${n4.value}`
+        }
+    </script>
+</body>
+</html>

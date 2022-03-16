@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Usuario</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        var idade = window.prompt('Qual a sua idade?')
+        var sexo = window.prompt('Qual seu sexo? (M/F)')
+        var cpf = window.prompt('Qual seu CPF?')
+        var conta = window.prompt('Quanto que é 8 X 7?')
+
+        document.write(`Seu nome é: ${nome}<br/> Sua idade é: ${idade}<br/> Seu sexo é: ${sexo}<br/> Seu CPF é: ${cpf}<br/> Resultado da Conta: ${conta}<br/>`) 
+
+       document.write(idade >= 18 && conta == 56 ?'APROVADO' : 'REPROVADO')
+        
+    </script>
+</body>
+</html>
