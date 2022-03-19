@@ -6,37 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+           
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: white;
+        }
+
+
         .cadastro {
             display: flex;
             flex-direction: column;
+            margin: auto;
+            margin-top: 15%;
+            background-color: blueviolet;
+            max-width: 600px;
+        
+        }
+
+        .radio {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
         }
 
         input {
+            margin: auto;
             width: 400px;
             padding: 10px;
             border-radius: 10px;
             box-shadow: none;
             margin-top: 10px;
         }
+        
+        div {
+            color: white;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #res {
+            border-top: 0.4px solid white;
+            margin: auto;
+            width: 300px;
+            padding-top: 15px;
+        }
 
         button {
+            margin: auto;
             margin-top: 10px;
-            width: 200px;
+            width: 300px;
             padding: 5px 15px;
-            margin-left: 100px;
         }
 
         #res {
             margin-top: 30px;
         }
+
+        p {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+        }
+
+        #mas {
+            display: inline;
+        }
+
+        label {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            text-align: center;
+            align-items: center;
+            margin-top: 8px;
+            margin-right: 10px;
+
+        }
     </style>
 </head>
 <body>
     <main class="cadastro">
+        <h1>Insira suas informações aqui</h1>
         <input id="nome" type="text" placeholder="Insira o nome aqui">
         <input id="email" type="email" placeholder="Insira o email aqui">
         <input id="celular" type="number" placeholder="Insira seu número de celular">
         <input id="cpf" type="number" placeholder="Insira o CPF">
+        <section class="radio">
+            <p>
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+        </section>
         <button type="submit" onclick="clicar()" id="botao">Enviar Cadastro</button>
 
         <div id="res"></div>
@@ -46,6 +124,8 @@
         <div id="res2"></div>
 
         <div id="res3"></div>
+
+        <div id="res4"></div>
     </main>
 
     <script>
@@ -57,12 +137,29 @@
         var res1 = document.getElementById('res1')
         var res2 = document.getElementById('res2')
         var res3 = document.getElementById('res3')
+        var res4 = document.getElementById('res4')
+       
 
         function clicar() {
+            var sexo = document.getElementsByName('sex')
+            var genero = ''
+            if(n1.value.length == 0 || n2.value.length == 0 || n3.value.length == 0 || n4.value.length == 0) {
+                alert('[ERRO] Preencha as informações abaixo')
+            } else if ( sexo [0].checked ) {
+                genero = 'Homem'
             res.innerHTML = `Seu nome é: ${n1.value}`
             res1.innerHTML = `Seu email é: ${n2.value}`
             res2.innerHTML = `Seu celular é: ${n3.value}`
             res3.innerHTML = `Seu CPF é: ${n4.value}`
+            res4.innerHTML = `Seu genero é: ${genero}`
+            } else {
+                genero = 'Mulher'
+            res.innerHTML = `Seu nome é: ${n1.value}`
+            res1.innerHTML = `Seu email é: ${n2.value}`
+            res2.innerHTML = `Seu celular é: ${n3.value}`
+            res3.innerHTML = `Seu CPF é: ${n4.value}`
+            res4.innerHTML = `Seu genero é: ${genero}`
+            }
         }
     </script>
 </body>

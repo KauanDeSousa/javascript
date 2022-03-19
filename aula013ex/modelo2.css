@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(0, 132, 255);
     font-size: 1em;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +23,6 @@ body {
 .parte-conteudo {
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
     width: 700px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
@@ -34,14 +33,27 @@ div {
     padding: 20px 40px;
 }
 
-#msg {
+#res {
+    display: block;
+}
+
+#foto {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#primeiro {
     font-size: 1.5em;
 }
 
-img {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
+p{
+    margin-top: 10px;
+
+}
+
+img.foto {
+    margin: auto;
 }
 
 .rodape {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro Digital</title>
+    <link rel="stylesheet" href="cronometro.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="h1">Cronometro Digital</h1>
+    </header>
+    <main class="conteudo">
+        <section class="parte-escrita">
+            <h2 class="h2-min">Minutos</h2>
+            <select name="minutos" id="min"></select>
+            <h2 class="h2-seg">Segundos</h2>
+            <select name="segundos" id="seg"></select>
+            <input type="button" value="Cronometrar" id="crono" onclick="cronometrar()">
+            <div id="res">
+
+            </div>
+        </section>
+        <section class="imagem">
+            <img class="foto" src="relogio.png" alt="Relogio">
+        </section>
+
+    </main>
+    <footer class="rodape">
+        <p class="p-rodape">Site Criado por <strong><a href="">Kauan Vitor</a></strong></p>
+
+    </footer>
+    <script src="cronometro.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.foto {
+    max-height: 300px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.cabecalho {
+    border-bottom: 0.4px solid white;
+}
+.h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 20vh;
+    padding-top: 20vh ;
+    width: 1200px;
+    border-radius: 20px;
+    display: flex;
+    color: black;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.parte-escrita {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#min {
+    margin-bottom: 10px;
+}
+
+#seg {
+    margin-bottom: 10px;
+}
+
+#crono {
+    padding: 5px 40px;
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#res {
+    margin: auto;
+    margin-top: 10px;
+}
+
